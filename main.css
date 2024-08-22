@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+:root{
+    --color1: #eaca3e;
+    --color2: #afa842;
+    --color3: #f7b791;
+    --color4: #e8d496;
+    --color5: #c6db9f;
+    --font: "Josefin Sans", sans-serif; 
+    --font2: "Cinzel", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+header, 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: var(--color1);
+    padding: 16px 24px;
+}
+
+header h1 {
+    font-family: var(--font2);
+}
+
+header nav li {
+    display: inline;
+    padding-left: 8px;
+}
+
+header nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav li a:hover {
+    font-weight: bold;
+}
+
+main {
+    padding: 16px 40px;
+}
+
+.recipes {
+    display: block; 
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.322);
+    width: 30%;
+}
+
+#entradas .recipes {
+    background-color: var(--color5);
+    border: 1px solid var(--color5);
+}
+
+#salgados .recipes {
+    background-color: var(--color2);
+    border: 1px solid var(--color2);
+}
+
+#doces .recipes {
+    background-color: var(--color3);
+    border: 1px solid var(--color3);
+}
+
+.recipes:hover {
+    width: 35%;
+    transform: scale(1.05) translate(0px, 0px);
+    transition: transform .3s, scale 1s, border 1s;
+}
+
+.recipes img {
+    width: 100%;
+    align-items: center;
+}
+
+.recipes h3 {
+    padding: 8px;
+    padding-bottom: 8px;
+    height: 50px;
+}
+
+.recipes p a {
+    color: black;
+    align-items: end;
+}
+
+section p a:hover {
+    font-weight: bold;
+}
+
+section h2 {
+    font-size: 24px;
+    font-family: var(--font2);
+    padding: 24px 0px;
+}
+
+section p a {
+    text-decoration: none;
+    color: black;
+}
+
+.recipes p {
+    padding: 20px 8px;
+}
+
+section p {
+    text-align: right;
+    padding-top: 20px;
+}
+
+.social li {
+    display: inline;
+}
+
+.social li a {
+    text-decoration: none;
+}
+
+.social img {
+    height: 24px;
+    padding-right: 8px;
+}
+
+#contatos .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#contatos input, 
+#contatos textarea, 
+#contatos button {
+    display: block;
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.coments textarea{
+    resize: none;
+    height: 200px;
+}
+
+#contatos button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--color1);
+    padding: 24px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 16px;
+}
+
+/*
+@media (max-width: 400px) {
+    main {
+        padding: 5px;
+    }
+
+    header nav a {
+        display: block;
+        font-size: 12px;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+
+    section h2 {
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+
+    .recipes {
+        height: 200px;
+    }
+
+    .recipes h3 {
+        font-size: 14px;
+        padding: 1.5px;
+    }
+
+    .recipes p a {
+        font-size: 12px;
+    }
+
+    .container {
+        align-items: center;
+    }
+
+    #contatos h2 {
+        font-size: 16px;
+    }
+
+    #contatos input, 
+    #contatos textarea, 
+    #contatos button {
+    width: 100px;
+    padding: 8px;
+    margin-bottom: 8px;
+    }
+
+    .coments textarea {
+        height: 100px;
+    }
+
+    .social img {
+        height: 16px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+} */
